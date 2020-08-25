@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<!-- nav bar modeled after Activity 11.3.7 -->
+    <meta charset="UTF-8">
+    <title>Latitude vs. Temperature</title>
+    <p></p>
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style_plot.css">
+</head>
+
+<body>
+    <!-- div class="row justify-content-end"???-->
+    <div class="container">
+        <!-- NAV BAR BRAND on left-->
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Latitude</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+        <!-- NAV BAR LINKS on right-->
+                    <!-- DEBUG!! -- dropdown opens on landing page but not on this page - even thought the code from landing page was copied and pasted here for the navbar -->
+                    <ul class="nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="lat_v_temp.html">Lat vs. Temperature</a>
+                                <a class="dropdown-item" href="lat_v_humidity.html">Lat vs. Humidity</a>
+                                <a class="dropdown-item" href="lat_v_cloudy.html">Lat vs. Cloudiness</a>
+                                <a class="dropdown-item" href="lat_v_wind_speed.html">Lat vs. Wind Speed</a>
+                                    
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison_page.html">Comparison</a>
+                        </li>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="weather_data.html">Data</a>
+                        </li>
+                    </ul>
+                    
+                
+                    </div>
+                </nav>
+            </div>
+        <!-- close out row -->        
+        </div>
+    <!-- close out container -->        
+    </div>
+
+<!-- . -->
+<!-- NAV BAR MODELED AFTER ACTIVITY 11.3.7 and Bootstrap navbar documentation -->
+    <div class="container">
+
+
+    <!-- This is the first row of charts. -->
+        <div class="row">
+
+      <!-- One half of screen (8/12) -->
+      <!-- QUESTION:-->
+      <!-- -- HOW TO: Add padding, margin-left, border and style to background-->
+            <div class="col-md-8">
+                <h4>Max Temperature</h4>
+                <!-- IMAGE 1-->
+                <article>
+              
+                    <a href="lat_v_temp.html">
+                    <img class = "vis_chart_1" target="_blank" src="assets/temperaturemap.png" alt="Tempurature Map">
+                    </a>
+                    <p>As expected, the closer to the equator you are the higher the temperature.  Average max temperatures reach an apex around 20 degrees.  This could be due to the tilt of the earth on its axis.</p>
+                </article>
+                
+        <!-- This ends column 1 of 2 -->
+            </div>
+
+
+        <!-- DEBUG!! -- How to make a 4 square? my method not working -->
+        <!-- One half of screen (4/12) -->
+        <!-- div class="row">  -->
+        <!-- QUESTION:  Should this be col-md-4 changed to col-md-8???-->
+            <div class="col-md-4">
+                <!-- This is column 1 of 2 -->
+                <!-- <div class="row"> -->
+
+                    <h4>Visualizations</h4>
+                    <!-- First of 4 square-->
+                        <a target="_blank" href="lat_v_temp.html">
+                        <img class="Figuresm" src="assets/temperaturemap.png" alt="Temperature Map">
+                        </a>
+                        
+                    <!-- Second of 4 square-->
+                        <a target="_blank" href="lat_v_humidity.html">
+                        <img class="Figuresm" src="assets/humiditymap.png" alt="Humidity Map">
+                        </a>
+                    
+                    <!-- Third of 4 square-->
+                        <a target="_blank" href="lat_v_cloudy.html">
+                        <img class="Figuresm" src="assets/cloudymap.png" alt="Cloudiness Map">
+                        </a>
+
+                    <!-- Fourth of 4 square-->
+                        <a target="_blank" href="lat_v_wind_speed.html">
+                        <img class="Figuresm" src="assets/windmap.png" alt="Wind Speed Map">
+                        </a>
+            <!-- this closes out 4 square of visualizations -->
+            </div>
+    <!-- this closes out container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

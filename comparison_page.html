@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<!-- nav bar modeled after Activity 11.3.7 -->
+  <meta charset="UTF-8">
+  <title>Latitude</title>
+  
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style_plot.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- NAV BAR BRAND on left-->
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+    <!-- NAV BAR LINKS on right-->
+                <!-- DEBUG!! -- dropdown opens on landing page but not on this page - even thought the code from landing page was copied and pasted here for the navbar -->
+                <ul class="nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="lat_v_temp.html">Lat vs. Temperature</a>
+                            <a class="dropdown-item" href="lat_v_humidity.html">Lat vs. Humidity</a>
+                            <a class="dropdown-item" href="lat_v_cloudy.html">Lat vs. Cloudiness</a>
+                            <a class="dropdown-item" href="lat_v_wind_speed.html">Lat vs. Wind Speed</a>
+                                
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison_page.html">Comparison</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="weather_data.html">Data</a>
+                    </li>
+                </ul>
+                
+            
+                </div>
+            </nav>
+        </div>
+    <!-- close out row -->        
+    </div>
+<!-- close out container -->        
+</div>
+
+
+
+  <!-- Bootstrap containers modeled after Activity 11.3.5-->  
+<div class="container">
+    
+  <div class="row">
+    <h3>Comparison: Latitude vs X</h3>
+  </div>
+
+    <div class="row">
+      <p>Click any plot to get an in-depth analysis</p>
+    </div>
+    <!-- This is the first row of charts. -->
+    <div class="row">
+
+      <!-- Columns have 12 areas of width to work with. -->
+
+      <!-- One half of screen (6/12) -->
+      <div class="col-md-6">
+          <h4>Lat vs. Temperature</h4>
+          <!-- IMAGE 1-->
+          <!-- QUESTIONS:-->
+          <!-- 1. what does article do? -->
+          <!-- 2. what does a href do? -->
+
+          <article>
+              
+            <a href="lat_v_temp.html">
+            <img target="_blank" src="assets/temperaturemap.png" alt="Tempurature Map">
+            </a>
+            
+          </article>
+        
+        <!-- This is column 1 of 2 -->
+      </div>
+
+      <!-- One half of screen (6/12) -->
+      <div class="col-md-6">
+          <h4>Lat vs. Humidity</h4>
+          <!-- IMAGE 2-->
+          <article>
+            <a target="_blank" href="lat_v_humidity.html">
+            <img src="assets/humiditymap.png" alt="Humidity Map">
+            </a>
+          
+            </article>
+            <hr>
+            <article>
+        
+        <!-- This is column 2 of 2 -->
+      </div>
+
+      <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
+    </div>
+
+<!-- This is the second row of charts. -->
+    <div class="row">
+
+        <!-- Columns have 12 areas of width to work with. -->
+
+        <!-- One half of screen (6/12) -->
+        <div class="col-md-6">
+            <h4>Lat vs. Cloudiness</h4>
+          <!-- IMAGE 3-->
+            <article>
+            <a target="_blank" href="lat_v_cloudy.html">
+            <img src="assets/cloudymap.png" alt="Cloudy Map">
+            </a>
+            
+            </article>
+
+            <!-- This is column 1 of 2 -->
+        </div>
+
+        <!-- One half of screen (6/12) -->
+        <div class="col-md-6">
+            <h4>Lat vs. Wind Speed</h4>
+          <!-- IMAGE 4-->
+          <article>
+            <a target="_blank" href="lat_v_wind_speed.html">
+            <img src="assets/windmap.png" alt="Wind Speed">
+            </a>
+            
+            </article>
+          <!-- This is column 2 of 2 -->
+        </div>
+
+        <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
+    </div>
+
+  </div>
+
+
+
+
+  
+  
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

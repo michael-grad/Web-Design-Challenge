@@ -1,0 +1,169 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+/* Style for nav bar on chart page */
+body {
+  background: white;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/* Giving our navbar some padding and a background color */
+.navbar { 
+  padding: 10px;
+  
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+/* .navbar li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+}*/
+
+/* Getting rid of the default link styles here */
+/* .navbar li a {
+  color: #000;
+  text-decoration: none;
+} */
+
+/* #nav-select {
+  visibility: hidden; */
+
+/* Sizing for 4x4 images in individual visualization pages and landing page - both in Column 2 */
+.Figuresm {
+  width: 45%;
+  padding: 10px
+}
+
+/* sizing for image in Column 1 for landing page and 4 individual visualization pages */
+.vis_chart_1 {
+  width: 100%;
+}
+
+/* Landing Page image to left of text */
+.landing_page_img {
+  float: left;
+}
+
+/* formatting left side of nav bar */
+.navbar-brand {
+  /* set background color, text color, and font type/size */
+  background-color:  teal;
+  /* DEBUG!! -- text color will not change to white */
+  color: white !important;
+}
+
+/* DEBUG!! -- font color not changing to white */
+/* change text color of Descriptor */
+/* .nav.navbar-nav.navbar-right li a { */
+  /* color: white; */
+}
+
+/* formatting right side of nav bar */
+.nav-item {
+  /* text color, and font size - font type is okay */
+  /* font size sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#:~:text=If%20you%20haven%27t%20set,of%20the%20current%20em%20size. */
+  /* DEBUG!! - color will not change to black */
+  color: black !important;
+  font-size: 0.8em;
+}
+
+/* header for Column 1 of Landing Page */
+/* formatting headers above each visualization image on all webpages */
+/* font family sourced from https://www.w3schools.com/css/css_font.asp */
+/* centering text sourced from https://www.w3schools.com/css/css_align.asp#:~:text=Center%20Align%20Text,This%20text%20is%20centered. */
+/* font-weight sourced from https://www.peachpit.com/articles/article.aspx?p=672150&seqNum=5#:~:text=To%20define%20bold%20text%20in%20a%20CSS%20rule%3A&text=Type%20the%20property%20name%20font,followed%20by%20a%20colon%20(%3A). */
+/* DEBUG!! -- margin for h3 not indenting text */
+/* DEBUG!! -- margin for h3 (Col 1 of landing page), and h4 (Col 1 and Col 2 of 5 image pages) not pushing images down (30px) */
+h3 {
+  color: teal;
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  /* margin: 0px, 20px, 30px, 0px; */
+}
+
+
+/* VERIFIED AS WORKING ON INDIVIDUAL WEATHER ATTRIBUTE PAGES */
+/* DEBUG!! -- NOT WORKING ON COMPARISON PAGE */
+h4 {
+  color: teal;
+  font-size: 1.0em;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  /* margin: 0px, 20px, 30px, 0px; */
+}
+
+/* padding and margins around visualizations in Column 1 of landing page and each of individual weather attribute webpages */
+/* DEBUG!! -- margin on left is causing Column 2 (4 square) to move below Column 1 */
+/*            width does not have the right result */
+.col-md-8 {
+  padding: 20px;
+  /* margin: 10px 20px 0px 0px; */
+  /* margin-left: 30px; */
+  /* width: 80%; */
+}
+
+.col-md-4 {
+  /* padding: 20px; */
+  margin: 20px 0px 0px 0px;
+}
+
+/* Data table alternating row colors */
+/* sourced from https://www.textfixer.com/tutorials/css-table-alternating-rows.php#:~:text=The%20CSS%20Code%20for%20the,copied%20from%20the%20box%20below. */
+.dataframe tr:nth-child(odd){
+  background-color:  rgb(243, 242, 242);
+}
+.dataframe tr:nth-child(even){
+  background-color:  white;
+}
+
+
+/* Shrink nav bar to pick list if screen size < xxx */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+
+
+
+/* Styling the header, giving it a height, a background color, and some top padding */
+/* .header {
+  height: 200px;
+  padding-top: 20px;
+  background: #cdcdcd;
+} */
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin
+.header h1 {
+  padding: 60px;
+  margin: 0;
+  color: #000;
+  text-align: center; */
+}
+
+/* Giving the .post element margin on 3 sides
+.post {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px; */
+}

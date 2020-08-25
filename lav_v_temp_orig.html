@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<!-- nav bar modeled after Activity 11.3.7 -->
+    <meta charset="UTF-8">
+    <title>Latitude vs. Temperature</title>
+    <p></p>
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- DEBUG!! -- inline-block not arranging list in a single row -->
+    <link rel="stylesheet" href="style_plot.css">
+</head>
+
+<body>
+    <!-- DEBUG!! -- How to left justify Latitude and right justify the remainder?-->
+    <!-- div class="row justify-content-end"???-->
+    <div class="container">
+        <!-- DEBUG -- -->
+        <!-- How to make left most "column" still appear when shrunken and have right most nabvar elements shrink to hamburger-->
+        <!-- How to make left most "column" in navbar a different style -->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <!-- DEBUG!! -- How to left align "Latitude" and right align all others in nav bar?-->
+                    <!-- DEBUG!! -- How to have a different color, size, font for left aligned vs. right aligned elements?-->
+                    <!-- Added class="left_most_navbar"-->
+                    <a class="left_most_navbar" href="#">Latitude</a>
+                </li>
+                <li>
+                    <!-- DEBUG!! -- -->
+                    <!-- 1. How to have without button -- -->
+                    <!-- 2. How to have dropdown expand -- -->
+                    <!-- DEBUG!! -- -->
+                    <!-- dropdown sourced from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Humidity</a>
+                          <a class="dropdown-item" href="#">Cloudiness</a>
+                          <a class="dropdown-item" href="#">Wind Speed</a>
+                        </div>
+                    </div>
+                        </li>
+                <li>
+                    <a href="#">Comparison</a>
+                </li>
+                <li>
+                    <a href="#">Data Link</a>
+                </li>
+            </ul>
+
+            <!-- DEBUG!! ---->
+            <!-- 1. Where does Plots Dropdown come from before expanding? ---->
+            <!-- 1.5 Why no longer visible?-->
+            <!-- 2. How to make selection options links? ---->
+            <select id="nav-select">
+                <option value="plots dropdown">Plots Dropdown</option>
+                
+                <option value="comparison">Comparison</option>
+                <option value="data link">Data Link</option>
+            </select>
+            <div class="clearfix"></div>
+    
+
+
+        </nav>
+    </div>
+
+<!-- . -->
+<!-- MAKE CHANGE:  make the img clickable to open a description page. -->
+<!-- QUESTIONS. -->
+<!-- How to make page responsive with size of window. -->
+<!--    Change links in top right to hamburger, stack charts -->
+
+<!-- Our rows function in containers (grid created). -->
+
+<!-- Bootstrap containers modeled after Activity 11.3.5-->  
+
+<!-- NAV BAR MODELED AFTER ACTIVITY 11.3.7-->
+    <div class="container">
+    <!--Header for page-->
+        <div class="row">
+        
+        </div>
+
+
+    <!-- This is the first row of charts. -->
+        <div class="row">
+
+      <!-- Columns have 12 areas of width to work with. -->
+
+      <!-- One half of screen (8/12) -->
+      <!-- QUESTION:-->
+      <!-- -- HOW TO: Add padding, margin-left, border and style to background-->
+            <div class="col-md-8">
+                <p>Max Temperature</p>
+                <!-- IMAGE 1-->
+                <article>
+              
+                    <a href="assets/temperaturemap.png">
+                    <img class = "vis_chart_1" target="_blank" src="assets/temperaturemap.png" alt="Tempurature Map">
+                    </a>
+                    <p>As expected, the closer to the equator you are the higher the temperature.  Average max temperatures reach an apex around 20 degrees.  This could be due to the tilt of the earth on its axis.</p>
+                </article>
+                
+        <!-- This is column 1 of 2 -->
+            </div>
+
+
+        <!-- DEBUG!! -- How to make a 4 square? my method not working -->
+        <!-- One half of screen (4/12) -->
+        <!-- div class="row">  -->
+        <!-- QUESTION:  Should this be col-md-4 changed to col-md-8???-->
+            <div class="col-md-4">
+                <!-- This is column 1 of 2 -->
+                <!-- <div class="row"> -->
+
+                    <p>Visualizations</p>
+                    <!-- First of 4 square-->
+                    
+            
+                    
+                        <a target="_blank" href="assets/temperaturemap.png">
+                        <img class="Figuresm" src="assets/temperaturemap.png" alt="Temperature Map">
+                        </a>
+                        
+                    
+                    
+                    
+    
+
+                    <!-- Second of 4 square-->
+                    
+            
+                    
+                        <a target="_blank" href="assets/humiditymap.png">
+                        <img class="Figuresm" src="assets/humiditymap.png" alt="Humidity Map">
+                        </a>
+                        
+                    
+                    
+                    
+                <!-- </div> -->
+                
+                <!-- This is row 2 of 2 -->
+                <!-- <div class="row"> -->
+
+                    <p>Visualizations</p>
+                    <!-- Third of 4 square-->
+                    
+            
+                    
+                        <a target="_blank" href="assets/cloudymap.png">
+                        <img class="Figuresm" src="assets/cloudymap.png" alt="Cloudiness Map">
+                        </a>
+                        
+                    
+                    
+                    
+    
+
+                    <!-- Fourth of 4 square-->
+                    
+            
+                    
+                        <a target="_blank" href="assets/windmap.png">
+                        <img class="Figuresm" src="assets/windmap.png" alt="Wind Speed Map">
+                        </a>
+                        
+                    
+                    
+                    
+                <!-- </div> -->
+
+            </div>
+        <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
+    </div>
+
+    </body>
+
+</html>
